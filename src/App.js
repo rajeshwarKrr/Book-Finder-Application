@@ -23,6 +23,9 @@ export default class App extends Component {
     fetch(BASE_URL, { method: "GET" })
       .then(response => response.json())
       .then(result => {
+        if(result.items === undefined) {
+          return;
+        }
         let books = result.items.map(item => {
           return {
             image:
@@ -40,6 +43,7 @@ export default class App extends Component {
               : "https://books.google.com/"
           };
         });
+
         this.setState({
           items: books
         });
