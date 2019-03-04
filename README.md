@@ -66,24 +66,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-
-
-# Book Finder App
-
-
-
-## Getting Started
-
-To See the code click the link below.
-https://codesandbox.io/s/github/rajeshwarKrr/bookFinderApp
-
-### Prerequisites
-NO prerequisites required.
-just a browser
-
-### See source Code and Preview
-https://codesandbox.io/s/github/rajeshwarKrr/bookFinderApp
-
-### Watch a Preview
-https://rr813vknmo.codesandbox.io/
