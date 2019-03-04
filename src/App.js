@@ -5,7 +5,8 @@ export default class App extends Component {
     super(props);
     this.state = {
       query: "",
-      items: []
+      items: [],
+      error: ""
     };
     this.search = this.search.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -23,9 +24,7 @@ export default class App extends Component {
     fetch(BASE_URL, { method: "GET" })
       .then(response => response.json())
       .then(result => {
-        if(result.items === undefined) {
-          return;
-        }
+      if( result.totalItems !== 0){
         let books = result.items.map(item => {
           return {
             image:
@@ -47,6 +46,11 @@ export default class App extends Component {
         this.setState({
           items: books
         });
+      } else {
+        this.setState( {
+          error: "no books found"
+        })
+      }
       });
   }
   handleChange(event) {
