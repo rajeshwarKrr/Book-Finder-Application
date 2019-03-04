@@ -2,7 +2,7 @@
   "name": "book-finder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rajeshwarkrr.github.io/Book-Finder-Application",
+  "homepage": "https://rajeshwarkrr.github.io/bookfinder",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.3",
