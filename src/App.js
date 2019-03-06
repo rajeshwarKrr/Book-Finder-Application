@@ -78,6 +78,7 @@ export default class App extends Component {
           <input type="submit" value="Search" />
         </form>
         <div className="container">
+          {this.state.error ? (<div className="error">{this.state.error}</div>):null}
             <BooksList propsItems={this.state.items} />
         </div>
       </div>
