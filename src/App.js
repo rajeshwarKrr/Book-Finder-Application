@@ -60,28 +60,31 @@ export default class App extends Component {
   }
 render() {
     return (
-      <div>
-        <h2>Book Finder</h2>
-        <form
-          onSubmit={event => {
-            event.preventDefault();
-            this.search();
-          }}
-        >
-          <input
-            type="text"
-            placeholder="Search for a book"
-            value={this.state.query}
-            onChange={this.handleChange}
-            onKeyPress={this.handleKeyPress}
-          />
-          <input type="submit" value="Search" />
-        </form>
-        <div className="container">
-          {this.state.error ? (<div className="error">{this.state.error}</div>):null}
-            <BooksList propsItems={this.state.items} />
+      <div className='container-fluid'>
+        <div className='row  text-center p-5'>
+          <div className='col'>
+            <h2>Book Finder</h2>
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                this.search();
+              }}
+            >
+              <input
+                type="text"
+                placeholder="Search for a book"
+                value={this.state.query}
+                onChange={this.handleChange}
+                onKeyPress={this.handleKeyPress}
+              />
+              <input type="submit" value="Search" />
+            </form>
+          </div>
         </div>
+        {this.state.error ? (<div className="error">{this.state.error}</div>):null}
+          <BooksList propsItems={this.state.items} />
       </div>
     );
   }
 }
+
