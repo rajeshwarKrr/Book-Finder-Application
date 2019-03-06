@@ -2,7 +2,7 @@ import React, { Component } from "react";
 export default class BooksList extends Component {
   render() {
     return (
-      <div>
+      <div class="row">
         {this.props.propsItems.map((item, i) => {
           return (
             <div className="col-4">
