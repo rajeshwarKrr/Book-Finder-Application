@@ -58,7 +58,7 @@ export default class App extends Component {
       query: event.target.value
     });
   }
-  render() {
+render() {
     return (
       <div>
         <h2>Book Finder</h2>
