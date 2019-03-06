@@ -78,9 +78,7 @@ export default class App extends Component {
           <input type="submit" value="Search" />
         </form>
         <div className="container">
-          <div className="row">
             <BooksList propsItems={this.state.items} />
-          </div>
         </div>
       </div>
     );
