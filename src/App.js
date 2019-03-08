@@ -63,7 +63,7 @@ render() {
       <div className='container-fluid'>
         <div className='row  text-center p-5'>
           <div className='col'>
-            <h2>Book Finder</h2>
+            <h2>Book Finder Application</h2>
             <form
               onSubmit={event => {
                 event.preventDefault();
@@ -87,4 +87,3 @@ render() {
     );
   }
 }
-
