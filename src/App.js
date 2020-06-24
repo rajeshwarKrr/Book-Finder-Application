@@ -18,7 +18,7 @@ export default class App extends Component {
 
   search() {
     const query = this.state.query;
-    const key = "key=AIzaSyDzJSgN1WapYXNU84aSP_Z3vNv_xV-yXTA";
+    const key = "key=AIzaSyA7KTeBBYcME8OsLLCy738PkZxZLPSCIAs";
     const BASE_URL = `https://www.googleapis.com/books/v1/volumes?q=${query}&${key}`;
     console.log(BASE_URL);
     fetch(BASE_URL, { method: "GET" })
